@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\my exam\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|solutionrelative:my exam\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\my exam\\my exam\\profileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|solutionrelative:my exam\\profileform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\my exam\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|solutionrelative:my exam\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\my exam\\sherch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|solutionrelative:my exam\\sherch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|d:\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\my exam\\my exam\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|solutionrelative:my exam\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\my exam\\singup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|solutionrelative:my exam\\singup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\my exam\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|solutionrelative:my exam\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\my exam\\sherch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|solutionrelative:my exam\\sherch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\my exam\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|solutionrelative:my exam\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\my exam\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73EE5D8F-07C6-40AB-BB20-2D0D4E5F5653}|My exam\\My exam.csproj|solutionrelative:my exam\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProfileForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\ProfileForm.cs",
+              "RelativeDocumentMoniker": "My exam\\ProfileForm.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\ProfileForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "My exam\\ProfileForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T16:20:49.17Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "delete.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\delete.cs",
+              "RelativeDocumentMoniker": "My exam\\delete.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\delete.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "My exam\\delete.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:38:48.121Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "home.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\home.cs",
+              "RelativeDocumentMoniker": "My exam\\home.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\home.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "My exam\\home.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:38:46.058Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "sherch.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\sherch.cs",
+              "RelativeDocumentMoniker": "My exam\\sherch.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\sherch.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "My exam\\sherch.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:38:38.31Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "delete.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\delete.cs",
+              "RelativeDocumentMoniker": "My exam\\delete.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\delete.cs",
+              "RelativeToolTip": "My exam\\delete.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wA8AAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:34:55.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "sherch.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\sherch.cs",
+              "RelativeDocumentMoniker": "My exam\\sherch.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\sherch.cs",
+              "RelativeToolTip": "My exam\\sherch.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:34:34.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "message.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\message.cs",
+              "RelativeDocumentMoniker": "My exam\\message.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\message.cs",
+              "RelativeToolTip": "My exam\\message.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wBUAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T11:31:18.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "singup.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\singup.cs",
+              "RelativeDocumentMoniker": "My exam\\singup.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\singup.cs",
+              "RelativeToolTip": "My exam\\singup.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T11:31:17.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "home.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\home.cs",
+              "RelativeDocumentMoniker": "My exam\\home.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\home.cs",
+              "RelativeToolTip": "My exam\\home.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T11:31:17.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "login.cs",
+              "DocumentMoniker": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\login.cs",
+              "RelativeDocumentMoniker": "My exam\\login.cs",
+              "ToolTip": "D:\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\My exam\\My exam\\login.cs",
+              "RelativeToolTip": "My exam\\login.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T11:31:18.837Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

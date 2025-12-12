@@ -1,0 +1,32 @@
+CREATE DATABASE pdm;
+USE pdm;
+
+-- Таблица пользователей
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(50) NOT NULL,
+    fullname VARCHAR(100),
+    age INT,
+    gender VARCHAR(20)
+);
+
+-- Таблица сообщений
+CREATE TABLE usermessage (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL, -- Отправитель
+    messege TEXT NOT NULL,
+    userid INT, -- Для совместимости с твоим кодом (можно хранить id отправителя)
+    touser VARCHAR(50) NOT NULL, -- Получатель
+    date_sent DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Добавим тестового пользователя (пароль 123)
+INSERT INTO users (username, password, fullname, age, gender) VALUES 
+('admin', '123', 'Admin User', 25, 'Male'),
+('user1', '123', 'Test User', 30, 'Female');
+
+-- Добавим тестовые сообщения
+INSERT INTO usermessage (username, messege, userid, touser) VALUES 
+('admin', 'Hi there, whould you like sigh my petition?', 1, 'user1'),
+('user1', 'No, way', 2, 'admin');
