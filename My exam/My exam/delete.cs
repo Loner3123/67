@@ -13,7 +13,7 @@ namespace My_exam
 {
     public partial class delete : Form
     {
-        public string myconnection = "datasource=localhost;port=3306;username=root;password=1111;database=pdm";
+        public string myconnection = "datasource=localhost;port=3306;username=root;password=1234;database=pdm";
         public delete()
         {
             InitializeComponent();

@@ -1,213 +1,109 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace My_exam
 {
     public partial class home : Form
     {
-        public string myconnection = "datasource=localhost;port=3306;username=root;password=1111;database=pdm";
-        private string currentUser;
+        public string myconnection = "datasource=localhost;port=3306;username=root;password=1234;database=pdm";
+        public string currentUsername;
 
-        public home(string username)
+        // Новый конструктор с параметром
+        public home(string user)
         {
             InitializeComponent();
-            this.currentUser = username;
+            currentUsername = user;
+            label6.Text = "HOME (" + user + ")"; // Показываем имя в заголовке
         }
 
+        // Старый конструктор (на всякий случай)
         public home()
         {
             InitializeComponent();
-            this.currentUser = "Гость";
+            currentUsername = "Guest";
         }
 
         private void Home_Load(object sender, EventArgs e)
         {
-            LoadUserHeader();
             LoadMessages();
         }
 
-        private void LoadUserHeader()
+        private void LoadMessages()
         {
-            if (currentUser != "Гость" && !string.IsNullOrEmpty(currentUser))
-            {
-                label6.Text = $"Welcome, {currentUser}";
-            }
-            else
-            {
-                label6.Text = "Welcome, Guest (Please Sign In)";
-                btnProfile.Enabled = false;
-                button1.Enabled = false;
-                button3.Enabled = false;
-            }
-        }
-
-        private void LoadMessages(string messageId = null)
-        {
-            if (currentUser == "Гость") return;
-
             try
             {
                 using (MySqlConnection conn = new MySqlConnection(myconnection))
                 {
                     conn.Open();
-
-                    string query = "SELECT id, username AS Sender, messege, date_sent FROM usermessage WHERE touser = @u";
-
-                    if (!string.IsNullOrEmpty(messageId))
-                    {
-                        if (int.TryParse(messageId, out int id))
-                        {
-                            query += " AND id = @id";
-                        }
-                        else
-                        {
-                            MessageBox.Show("Введен некорректный ID сообщения.", "Ошибка ввода");
-                            messageId = null;
-                        }
-                    }
-
-                    query += " ORDER BY date_sent DESC";
-
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@u", currentUser);
-
-                        if (!string.IsNullOrEmpty(messageId) && int.TryParse(messageId, out int idValue))
-                        {
-                            cmd.Parameters.AddWithValue("@id", idValue);
-                        }
-
-                        MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
-                        DataTable table = new DataTable();
-                        adapter.Fill(table);
-
-                        asfasdfsadfsda.DataSource = table;
-
-                        if (asfasdfsadfsda.Columns.Contains("id"))
-                        {
-                            asfasdfsadfsda.Columns["id"].Visible = false;
-                        }
-
-                        if (table.Rows.Count == 0 && !string.IsNullOrEmpty(messageId))
-                        {
-                            MessageBox.Show($"Сообщение с ID {messageId} не найдено среди ваших полученных сообщений.", "Результат поиска");
-                        }
-                    }
+                    string query = "SELECT * from usermessage";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    asfasdfsadfsda.DataSource = dt;
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ошибка загрузки/поиска сообщений: " + ex.Message);
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            message messageForm = new message(currentUser);
-            messageForm.Show();
-            this.Hide();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (currentUser == "Гость") return;
-
-            if (int.TryParse(textBox1.Text, out int messageId))
-            {
-                if (MessageBox.Show($"Вы уверены, что хотите удалить сообщение ID: {messageId}?", "Подтверждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
-                {
-                    return;
-                }
-
-                try
-                {
-                    using (MySqlConnection conn = new MySqlConnection(myconnection))
-                    {
-                        conn.Open();
-                        string query = "DELETE FROM usermessage WHERE id = @id AND touser = @u";
-
-                        using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                        {
-                            cmd.Parameters.AddWithValue("@id", messageId);
-                            cmd.Parameters.AddWithValue("@u", currentUser);
-
-                            int rowsAffected = cmd.ExecuteNonQuery();
-
-                            if (rowsAffected > 0)
-                            {
-                                MessageBox.Show("Сообщение успешно удалено.", "Успех");
-                                LoadMessages();
-                            }
-                            else
-                            {
-                                MessageBox.Show("Сообщение не найдено или у вас нет прав на его удаление.", "Ошибка");
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Ошибка удаления: " + ex.Message);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Пожалуйста, введите корректный ID сообщения.", "Ошибка ввода");
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string searchId = textBox1.Text.Trim();
-
-            if (string.IsNullOrEmpty(searchId))
-            {
-                LoadMessages();
-                MessageBox.Show("Показан полный список полученных сообщений.", "Поиск сброшен");
-            }
-            else
-            {
-                LoadMessages(searchId);
-            }
-        }
-
-
-        private void BtnSignOut_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-            MessageBox.Show("Вы вышли из системы.", "Выход");
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            if (currentUser != "Гость" && !string.IsNullOrEmpty(currentUser))
-            {
-                ProfileForm profileForm = new ProfileForm(currentUser);
-                profileForm.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Для просмотра профиля необходимо войти.", "Внимание");
-            }
+            // Открываем новую форму профиля
+            ProfileForm pf = new ProfileForm(currentUsername);
+            pf.ShowDialog();
         }
 
-        private void Asfasdfsadfsda_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void BtnSignOut_Click(object sender, EventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                if (asfasdfsadfsda.Columns.Contains("id"))
-                {
-                    DataGridViewCell idCell = asfasdfsadfsda.Rows[e.RowIndex].Cells["id"];
+            login loginForm = new login();
+            loginForm.Show();
+            this.Close();
+        }
 
-                    if (idCell.Value != null)
-                    {
-                        textBox1.Text = idCell.Value.ToString();
-                    }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            message messegeForm = new message();
+            messegeForm.Show();
+            this.Dispose();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            sherch sherchForm = new sherch();
+            sherchForm.Show();
+            this.Dispose();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(myconnection))
+                {
+                    conn.Open();
+                    MySqlCommand delete = new MySqlCommand("delete from usermessage where id = @id", conn);
+                    delete.Parameters.AddWithValue("@id", textBox1.Text);
+                    delete.ExecuteNonQuery();
+                    MessageBox.Show("Сообщение удалено");
+                    LoadMessages(); // Обновить таблицу
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка: " + ex.Message);
+            }
         }
+
+        private void Asfasdfsadfsda_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
+        private void Label1_Click(object sender, EventArgs e) { }
     }
 }
